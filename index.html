@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunting API</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <h2 class="navbar-title">Hot Gadgets</h2>
+        <button class="btn btn-primary">Sign Up</button>
+    </nav>
+
+    <header>
+        <section class="header-section">
+            <h1 class="header-title">Phone Hunting API</h1>
+            <p class="header-text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
+            <div class="header-btn-container">
+                <button class="btn btn-primary">Buy Now</button>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <input id="searchField" type="text" placeholder="e.g. oppo, samsung, iphone" class="search-input">
+            <button onclick="searchHandler()" class="btn btn-primary">Search</button>
+        </section>
+
+        <section>
+            <div id="loading" class="loading-container hidden">
+                <h1>Searching</h1>
+                <span class="loading"></span>
+            </div>
+
+            <div id="phone-container" class="phone-container"></div>
+        </section>
+
+        <div id="showALLBtn" class="show-all-container hidden">
+            <button onclick="showBtn()" class="btn btn-primary">Show All</button>
+        </div>
+    </main>
+
+    <dialog id="my_modal" class="modal">
+        <form method="dialog" class="modal-box text-center">
+            <div id="imgContainer" class="image-container"></div>
+            <h3 id="detailsPhoneName" class="phone-name"></h3>
+            <h3 id="detailsBrand" class="brand"></h3>
+            <p id="detailsSpec" class="specs"></p>
+            <p id="releaseDate" class="release-date"></p>
+            <div class="modal-action">
+                <button class="btn btn-secondary">Close</button>
+            </div>
+        </form>
+    </dialog>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd" class="social-icon"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+            <p class="footer-text">Hot Gadgets BD<br>Providing reliable tech items since 1992</p>
+            <p class="footer-text">Copyright © 2023 - All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

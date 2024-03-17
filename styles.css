@@ -1,0 +1,86 @@
+/* Styles for Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0d6efd0d;
+}
+
+.navbar-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Styles for Header */
+.header-section {
+  padding-bottom: 96px;
+  background-color: #0d6efd0d;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.header-text {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.header-btn-container {
+  margin-top: 20px;
+}
+
+/* Styles for Main Section */
+.search-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-input {
+  width: 300px;
+}
+
+.phone-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px;
+}
+
+.show-all-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Styles for Modal */
+.modal {
+  display: none;
+}
+
+/* Styles for Footer */
+.footer {
+  background-color: #0d6efd0d;
+  color: black;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  fill: currentColor;
+  margin-bottom: 10px;
+}
